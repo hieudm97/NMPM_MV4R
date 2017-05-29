@@ -32,7 +32,7 @@ namespace PROJECT.GUI.khachhang
         }
         public void startform()
         {
-           // Application.Run(new GUI.dangkidangnhap.loadinghethong()); 
+            Application.Run(new GUI.dangkidangnhap.loadinghethong()); 
         }
         public void initialize_info()
         {
