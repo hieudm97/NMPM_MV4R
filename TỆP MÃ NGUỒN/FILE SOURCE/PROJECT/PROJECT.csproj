@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14B720F1-C360-43B3-871F-F76F94F3EADE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PROJECT</RootNamespace>
+    <AssemblyName>PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_LAYER\CHITIETDONHANG.cs" />
+    <Compile Include="DB_LAYER\DB.cs" />
+    <Compile Include="DB_LAYER\DIA.cs" />
+    <Compile Include="DB_LAYER\DONHANG.cs" />
+    <Compile Include="DB_LAYER\DONHANGCANXULY.cs" />
+    <Compile Include="GUI\dangkidangnhap\dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\dangkidangnhap\dangnhap.Designer.cs">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\dangkidangnhap\dangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\dangkidangnhap\dangky.Designer.cs">
+      <DependentUpon>dangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\dangkidangnhap\loadinghethong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\dangkidangnhap\loadinghethong.Designer.cs">
+      <DependentUpon>loadinghethong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\dangkidangnhap\loadingnhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\dangkidangnhap\loadingnhanvien.Designer.cs">
+      <DependentUpon>loadingnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\khachhang\chitietsanpham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\khachhang\chitietsanpham.Designer.cs">
+      <DependentUpon>chitietsanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\khachhang\giaodienchinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\khachhang\giaodienchinh.Designer.cs">
+      <DependentUpon>giaodienchinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\khachhang\donhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\khachhang\donhang.Designer.cs">
+      <DependentUpon>donhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nhanvien\giaodienquanlichinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\giaodienquanlichinh.Designer.cs">
+      <DependentUpon>giaodienquanlichinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIDIA\quanlidia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIDIA\quanlidia.Designer.cs">
+      <DependentUpon>quanlidia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.Designer.cs">
+      <DependentUpon>formxemchitietdonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.Designer.cs">
+      <DependentUpon>INHOADON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIHOADON\quanlihdon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIHOADON\quanlihdon.Designer.cs">
+      <DependentUpon>quanlihdon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIDONHANG\quanlidonhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIDONHANG\quanlidonhang.Designer.cs">
+      <DependentUpon>quanlidonhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.Designer.cs">
+      <DependentUpon>quanlikhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_LAYER\HOADON.cs" />
+    <Compile Include="DB_LAYER\KHACHHANG.cs" />
+    <Compile Include="LOGIC_LAYER\LOGIC.cs" />
+    <Compile Include="DB_LAYER\NHANVIEN.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DB_LAYER\sysdiagram.cs" />
+    <EmbeddedResource Include="GUI\dangkidangnhap\dangnhap.resx">
+      <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\dangkidangnhap\dangky.resx">
+      <DependentUpon>dangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\dangkidangnhap\loadinghethong.resx">
+      <DependentUpon>loadinghethong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\dangkidangnhap\loadingnhanvien.resx">
+      <DependentUpon>loadingnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\khachhang\chitietsanpham.resx">
+      <DependentUpon>chitietsanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\khachhang\giaodienchinh.resx">
+      <DependentUpon>giaodienchinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\khachhang\donhang.resx">
+      <DependentUpon>donhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\giaodienquanlichinh.resx">
+      <DependentUpon>giaodienquanlichinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\QUANLIDIA\quanlidia.resx">
+      <DependentUpon>quanlidia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.resx">
+      <DependentUpon>formxemchitietdonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.resx">
+      <DependentUpon>INHOADON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\QUANLIHOADON\quanlihdon.resx">
+      <DependentUpon>quanlihdon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\QUANLIDONHANG\quanlidonhang.resx">
+      <DependentUpon>quanlidonhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.resx">
+      <DependentUpon>quanlikhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
