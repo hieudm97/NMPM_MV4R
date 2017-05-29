@@ -288,21 +288,29 @@ namespace PROJECT.GUI.khachhang
 
         private void txt_timkiem_TextChanged(object sender, EventArgs e)
         {
-            
-            string timkiem = txt_timkiem.Text;
-            DataGridView dgv = new DataGridView();
-            dgv.DataSource =  lg.timkiemsanpham_GUI_KH_giaodienchinh(timkiem).ToList();
-            panel7.Controls.Add(dgv);
-            dgv.Dock = DockStyle.Fill;
-            dgv.BringToFront();
-            dgv.Columns[0].Visible = false;
-            dgv.Columns[1].Visible = false;
-            dgv.Columns[3].Visible = false;
-            dgv.Columns[4].Visible = false;
-            dgv.Columns[8].Visible = false;
-            dgv.Columns[9].Visible = false;
-            dgv.AutoSizeColumnsMode =
-               DataGridViewAutoSizeColumnsMode.Fill;
+            try
+            {
+                string timkiem = txt_timkiem.Text;
+                DataGridView dgv = new DataGridView();
+                dgv.DataSource = lg.timkiemsanpham_GUI_KH_giaodienchinh(timkiem).ToList();
+                panel7.Controls.Add(dgv);
+                dgv.Dock = DockStyle.Fill;
+                dgv.BringToFront();
+                dgv.Columns[0].Visible = false;
+                dgv.Columns[1].Visible = false;
+                dgv.Columns[3].Visible = false;
+                dgv.Columns[4].Visible = false;
+                dgv.Columns[8].Visible = false;
+                dgv.Columns[9].Visible = false;
+                dgv.AutoSizeColumnsMode =
+                   DataGridViewAutoSizeColumnsMode.Fill;
+
+                }
+            catch
+            {
+                MessageBox.Show("CHÚ Ý THAO TÁC");
+            }
+
 
         }
 
