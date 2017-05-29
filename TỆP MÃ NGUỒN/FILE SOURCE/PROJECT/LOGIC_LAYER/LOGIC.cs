@@ -384,7 +384,7 @@ namespace PROJECT.LOGIC_LAYER
         }
 
         internal int themthanhvien_GUI_dkdn_dangky(string hovaten, 
-            int tuoi, DateTime ngaysinh, string tencongty, string diachi,
+            int tuoi, DateTime ngaysinh, string tencongty, string diachi,string loaithanhvien, 
             string tendangnhap, string matkhau)
         {
             // throw new NotImplementedException();
@@ -403,6 +403,7 @@ namespace PROJECT.LOGIC_LAYER
                 kh.TENDANGNHAP = tendangnhap;
                 kh.MATKHAU = matkhau;
                 kh.DIACHI = diachi;
+                kh.LOAITHANHVIEN = loaithanhvien; 
                 db.KHACHHANGs.Add(kh);
                 db.SaveChanges();
                 return 1;
@@ -592,7 +593,7 @@ namespace PROJECT.LOGIC_LAYER
         }
 
         internal void themdia_GUI_nhanvien_quanlidia(string tendia, DateTime ngaynhapdia, 
-            int soluong, string thongtinlienquan, float gia,string loaidia, Image hinhanhdia)
+            int soluong, string thongtinlienquan, float gia,string loaidia, Image hinhanhdia,string doangioithieu)
         {
             //   throw new NotImplementedException();
             DIA dia = new DIA();
@@ -602,7 +603,7 @@ namespace PROJECT.LOGIC_LAYER
             dia.THONGTINLIENQUAN = thongtinlienquan;
             dia.GIA = gia;
             dia.LOAIDIA = loaidia;
-
+            dia.DOANGIOITHIEU = doangioithieu;
             ImageConverter _imageConverter = new ImageConverter();
             byte[] hinhanh = (byte[])_imageConverter.ConvertTo(hinhanhdia, typeof(byte[]));
             dia.HINHANHPHIM = hinhanh;

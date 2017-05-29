@@ -50,6 +50,9 @@
             this.txt_search = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_chenanh = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbo_loaidia = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.richtxt_thongtinlienquan = new System.Windows.Forms.RichTextBox();
@@ -65,9 +68,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_iddia = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btn_chenanh = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_doangioithieu = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -271,6 +273,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txt_doangioithieu);
             this.groupBox1.Controls.Add(this.btn_chenanh);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.pictureBox1);
@@ -295,6 +299,35 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN ";
+            // 
+            // btn_chenanh
+            // 
+            this.btn_chenanh.Location = new System.Drawing.Point(25, 214);
+            this.btn_chenanh.Name = "btn_chenanh";
+            this.btn_chenanh.Size = new System.Drawing.Size(75, 58);
+            this.btn_chenanh.TabIndex = 17;
+            this.btn_chenanh.Text = "Chèn ảnh";
+            this.btn_chenanh.UseVisualStyleBackColor = true;
+            this.btn_chenanh.Click += new System.EventHandler(this.btn_chenanh_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(22, 193);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 17);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "HÌNH ẢNH";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(103, 180);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(248, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // cbo_loaidia
             // 
@@ -353,7 +386,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(396, 84);
+            this.label5.Location = new System.Drawing.Point(396, 64);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 17);
             this.label5.TabIndex = 7;
@@ -361,7 +394,7 @@
             // 
             // txt_giasanpham
             // 
-            this.txt_giasanpham.Location = new System.Drawing.Point(508, 77);
+            this.txt_giasanpham.Location = new System.Drawing.Point(508, 62);
             this.txt_giasanpham.Name = "txt_giasanpham";
             this.txt_giasanpham.Size = new System.Drawing.Size(333, 22);
             this.txt_giasanpham.TabIndex = 6;
@@ -415,34 +448,21 @@
             this.txt_iddia.Size = new System.Drawing.Size(248, 22);
             this.txt_iddia.TabIndex = 0;
             // 
-            // pictureBox1
+            // label9
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(103, 180);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(380, 99);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(125, 17);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "ĐOẠN GIỚI THIỆU";
             // 
-            // label8
+            // txt_doangioithieu
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(22, 193);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 17);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "HÌNH ẢNH";
-            // 
-            // btn_chenanh
-            // 
-            this.btn_chenanh.Location = new System.Drawing.Point(25, 214);
-            this.btn_chenanh.Name = "btn_chenanh";
-            this.btn_chenanh.Size = new System.Drawing.Size(75, 58);
-            this.btn_chenanh.TabIndex = 17;
-            this.btn_chenanh.Text = "Chèn ảnh";
-            this.btn_chenanh.UseVisualStyleBackColor = true;
-            this.btn_chenanh.Click += new System.EventHandler(this.btn_chenanh_Click);
+            this.txt_doangioithieu.Location = new System.Drawing.Point(508, 97);
+            this.txt_doangioithieu.Name = "txt_doangioithieu";
+            this.txt_doangioithieu.Size = new System.Drawing.Size(333, 22);
+            this.txt_doangioithieu.TabIndex = 18;
             // 
             // quanlidia
             // 
@@ -507,5 +527,7 @@
         private System.Windows.Forms.Button btn_chenanh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_doangioithieu;
     }
 }

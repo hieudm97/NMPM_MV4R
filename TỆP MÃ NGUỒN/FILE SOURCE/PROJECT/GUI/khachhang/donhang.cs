@@ -48,25 +48,33 @@ namespace PROJECT.GUI.khachhang
         private void khoitaothongtin()
         {
             //KHỞI TẠO DỮ LIỆU DATAGRIDVIEW VÀ TẮT CÁC CỘT KHÔNG CẦN THIẾT
-            foreach (DataGridViewRow item in dgv.Rows)
+            try
             {
-                if ((bool)item.Cells[0].Value == true)
+                foreach (DataGridViewRow item in dgv.Rows)
                 {
-                    int n = dataGridView1.Rows.Add();
-                    dataGridView1.Rows[n].Cells[0].Value = item.Cells[0].Value.ToString();
-                    dataGridView1.Rows[n].Cells[1].Value = item.Cells[1].Value.ToString();
-                    dataGridView1.Rows[n].Cells[2].Value = item.Cells[2].Value.ToString();
-                    dataGridView1.Rows[n].Cells[3].Value = item.Cells[3].Value.ToString();
-                    dataGridView1.Rows[n].Cells[4].Value = item.Cells[4].Value.ToString();
-                    dataGridView1.Rows[n].Cells[5].Value = item.Cells[5].Value.ToString();
-                    dataGridView1.Rows[n].Cells[6].Value = item.Cells[6].Value.ToString();
-                    dataGridView1.Rows[n].Cells[7].Value = item.Cells[7].Value.ToString();
-                    dataGridView1.Rows[n].Cells[8].Value = item.Cells[8].Value.ToString();
-                    dataGridView1.Rows[n].Cells[9].Value = item.Cells[9].Value.ToString();
-                    dataGridView1.Rows[n].Cells[10].Value = item.Cells[10].Value.ToString();
-                    dataGridView1.Rows[n].Cells[11].Value = item.Cells[11].Value.ToString();
+                    if ((bool)item.Cells[0].Value == true)
+                    {
+                        int n = dataGridView1.Rows.Add();
+                        dataGridView1.Rows[n].Cells[0].Value = item.Cells[0].Value.ToString();
+                        dataGridView1.Rows[n].Cells[1].Value = item.Cells[1].Value.ToString();
+                        dataGridView1.Rows[n].Cells[2].Value = item.Cells[2].Value.ToString();
+                        dataGridView1.Rows[n].Cells[3].Value = item.Cells[3].Value.ToString();
+                        dataGridView1.Rows[n].Cells[4].Value = item.Cells[4].Value.ToString();
+                        dataGridView1.Rows[n].Cells[5].Value = item.Cells[5].Value.ToString();
+                        dataGridView1.Rows[n].Cells[6].Value = item.Cells[6].Value.ToString();
+                        dataGridView1.Rows[n].Cells[7].Value = item.Cells[7].Value.ToString();
+                        dataGridView1.Rows[n].Cells[8].Value = item.Cells[8].Value.ToString();
+                        dataGridView1.Rows[n].Cells[9].Value = item.Cells[9].Value.ToString();
+                        dataGridView1.Rows[n].Cells[10].Value = item.Cells[10].Value.ToString();
+                        dataGridView1.Rows[n].Cells[11].Value = item.Cells[11].Value.ToString();
+                    }
                 }
             }
+            catch
+            {
+                MessageBox.Show("LỖI!!!");
+            }
+      
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[1].Visible = false;

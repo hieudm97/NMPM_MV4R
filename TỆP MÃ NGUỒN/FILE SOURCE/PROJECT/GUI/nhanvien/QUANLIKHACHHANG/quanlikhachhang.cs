@@ -133,21 +133,29 @@ namespace PROJECT.GUI.nhanvien.QUANLIKHACHHANG
         {
             /*thực hiện sửa thông tin khách hàng và ghi lại vào DB*/
             //khởi tạo thông tin cần thiết
-            int ID = int.Parse(txt_makhachang.Text);
-            string TEN = txt_hoten.Text;
-            int TUOI = int.Parse(txt_tuoi.Text);
-            DateTime NGAYSINH = DateTime.ParseExact(txt_ngaysinh.Text, "ddmmyyyy",
-                                   System.Globalization.CultureInfo.InvariantCulture);
-            string TENCONGTY = txt_tencongty.Text;
-            string TENDANGNHAP = txt_tendangnhap.Text;
-            string MATKHAU = txt_matkhau.Text;
-            string LOAITHANHVIEN = cbo_loaithanhvien.Text;
-            //thực hiện thao tác sửa
-            lg.suakhachhang_GUI_nhanvien_quanlikh(ID, TEN, TUOI,
-                NGAYSINH, TENCONGTY, TENDANGNHAP,
-                MATKHAU, LOAITHANHVIEN);
-            //thông báo 
-            MessageBox.Show("SỬA THÔNG TIN KHÁCH HÀNG THÀNH CÔNG!!!");
+            try
+            {
+                int ID = int.Parse(txt_makhachang.Text);
+                string TEN = txt_hoten.Text;
+                int TUOI = int.Parse(txt_tuoi.Text);
+                DateTime NGAYSINH = DateTime.ParseExact(txt_ngaysinh.Text, "ddMMyyyy",
+                                       System.Globalization.CultureInfo.InvariantCulture);
+                string TENCONGTY = txt_tencongty.Text;
+                string TENDANGNHAP = txt_tendangnhap.Text;
+                string MATKHAU = txt_matkhau.Text;
+                string LOAITHANHVIEN = cbo_loaithanhvien.Text;
+                //thực hiện thao tác sửa
+                lg.suakhachhang_GUI_nhanvien_quanlikh(ID, TEN, TUOI,
+                    NGAYSINH, TENCONGTY, TENDANGNHAP,
+                    MATKHAU, LOAITHANHVIEN);
+                //thông báo 
+                MessageBox.Show("SỬA THÔNG TIN KHÁCH HÀNG THÀNH CÔNG!!!");
+            }
+            catch
+            {
+                MessageBox.Show("XEM LẠI THÔNG TIN NHẬP");
+            }
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

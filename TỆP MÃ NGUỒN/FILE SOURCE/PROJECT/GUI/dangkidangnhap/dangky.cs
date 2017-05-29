@@ -35,9 +35,10 @@ namespace PROJECT
                 string tendangnhap = txt_tendangnhap.Text;
                 string matkhau = txt_matkhau.Text;
                 string diachi = txt_diachi.Text;
+                string loaithanhvien = "THƯỜNG";
                 //thực hiện thao tác thêm
                 if (lg.themthanhvien_GUI_dkdn_dangky(hovaten, tuoi, ngaysinh,
-                    tencongty, diachi, tendangnhap, matkhau) == 1)
+                    tencongty, diachi,loaithanhvien, tendangnhap, matkhau) == 1)
                 {
                     //thông báo
                     MessageBox.Show("CHÚC MỪNG BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG!!!");

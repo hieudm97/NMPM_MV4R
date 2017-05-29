@@ -41,31 +41,39 @@ namespace PROJECT.GUI.nhanvien
             string loaitimkiem = comboBox1.Text;
 
             //bat dau tim kiem
-            switch (loaitimkiem)
-            {   
-                case "ID":
-                    /*tim kiem thong tin ĐĨA THEO ID*/
-                    int dia_id = int.Parse(txt_search.Text);
-                    dataGridView1.DataSource = lg.laydanhsachdiatheoid_GUI_nhanvien_quanlidia(dia_id).ToList();
-                    ancot();
-                    kiemtra_timkiemrong();
+            try
+            {
+                switch (loaitimkiem)
+                {
+                    case "ID":
+                        /*tim kiem thong tin ĐĨA THEO ID*/
+                        int dia_id = int.Parse(txt_search.Text);
+                        dataGridView1.DataSource = lg.laydanhsachdiatheoid_GUI_nhanvien_quanlidia(dia_id).ToList();
+                        ancot();
+                        kiemtra_timkiemrong();
 
-                    break;
-                case "TÊN ĐĨA":
-                    //tim kiem thong tin bang ten dia
-                    string tendia = txt_search.Text;
-                    dataGridView1.DataSource = lg.laydanhsachdiatheotendia_GUI_nhanvien_quanlidia(tendia).ToList();
-                    ancot();
-                    kiemtra_timkiemrong();
-                    break;
-                case "GIÁ":
-                    //tim kiem thong tin dua vao gia
-                    float gia = float.Parse(txt_search.Text);
-                    dataGridView1.DataSource = lg.laydanhsachdiatheogia_GUI_nhanvien_quanlidia(gia).ToList();
-                    ancot();
-                    kiemtra_timkiemrong();
-                    break;
+                        break;
+                    case "TÊN ĐĨA":
+                        //tim kiem thong tin bang ten dia
+                        string tendia = txt_search.Text;
+                        dataGridView1.DataSource = lg.laydanhsachdiatheotendia_GUI_nhanvien_quanlidia(tendia).ToList();
+                        ancot();
+                        kiemtra_timkiemrong();
+                        break;
+                    case "GIÁ":
+                        //tim kiem thong tin dua vao gia
+                        float gia = float.Parse(txt_search.Text);
+                        dataGridView1.DataSource = lg.laydanhsachdiatheogia_GUI_nhanvien_quanlidia(gia).ToList();
+                        ancot();
+                        kiemtra_timkiemrong();
+                        break;
+                }
             }
+            catch
+            {
+                MessageBox.Show("XEM LẠI THÔNG TIN TÌM KIẾM");
+            }
+        
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -90,13 +98,14 @@ namespace PROJECT.GUI.nhanvien
                 string thongtinlienquan = richtxt_thongtinlienquan.Text;
                 float gia = float.Parse(txt_giasanpham.Text);
                 string loaidia = cbo_loaidia.Text;
+                string doangioithieu = xulychuoi(txt_doangioithieu.Text); 
                 Image hinhanhphim = pictureBox1.Image;
                 if(hinhanhphim == null)
                 {
                     MessageBox.Show("VUI LÒNG CHÈN HÌNH ẢNH ĐẠI DIỆN CHO ĐĨA");
                 }
                 //thuc hien thao tac them dia 
-                lg.themdia_GUI_nhanvien_quanlidia(tendia, ngaynhapdia, soluong, thongtinlienquan, gia,loaidia,hinhanhphim);
+                lg.themdia_GUI_nhanvien_quanlidia(tendia, ngaynhapdia, soluong, thongtinlienquan, gia,loaidia,hinhanhphim,doangioithieu);
                 //thong bao thanh cong 
                 MessageBox.Show("CHÚC MỪNG!!! BẠN VỪA THÊM ĐĨA THÀNH CÔNG");
             }
@@ -105,6 +114,17 @@ namespace PROJECT.GUI.nhanvien
                 MessageBox.Show("VUI LÒNG KIỂM TRA LẠI TOÀN BỘ THÔNG TIN VỪA NHẬP");
             }
           
+        }
+
+        private string xulychuoi(string text)
+        {
+            // throw new NotImplementedException();
+            string chuoidaxuly = "";
+            String bandau = text;
+           bandau =  bandau.Replace("watch?v=", "v/");
+            chuoidaxuly = bandau;
+            MessageBox.Show(chuoidaxuly);
+            return chuoidaxuly; 
         }
 
         private void btn_xoadia_Click(object sender, EventArgs e)
