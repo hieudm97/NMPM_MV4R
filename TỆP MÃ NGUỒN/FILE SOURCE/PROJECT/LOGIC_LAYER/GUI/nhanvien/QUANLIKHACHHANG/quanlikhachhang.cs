@@ -167,7 +167,12 @@ namespace PROJECT.GUI.nhanvien.QUANLIKHACHHANG
             txt_makhachang.Text = dgv_row.Cells["ID"].Value.ToString();
             txt_hoten.Text = dgv_row.Cells["TEN"].Value.ToString();
             txt_tuoi.Text = dgv_row.Cells["TUOI"].Value.ToString();
-            txt_ngaysinh.Text = dgv_row.Cells["NGAYSINH"].Value.ToString();
+
+         
+            DateTime ngaysinh = DateTime.Parse(dgv_row.Cells["NGAYSINH"].Value.ToString());
+            txt_ngaysinh.Text = ngaysinh.ToString("ddMMyyyy");
+
+
             txt_tencongty.Text = dgv_row.Cells["TENCONGTY"].Value.ToString();
             txt_tendangnhap.Text = dgv_row.Cells["TENDANGNHAP"].Value.ToString();
             txt_matkhau.Text = dgv_row.Cells["MATKHAU"].Value.ToString();

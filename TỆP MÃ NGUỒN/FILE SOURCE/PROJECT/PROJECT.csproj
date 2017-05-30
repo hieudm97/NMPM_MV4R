@@ -73,94 +73,94 @@
     <Compile Include="DB_LAYER\DIA.cs" />
     <Compile Include="DB_LAYER\DONHANG.cs" />
     <Compile Include="DB_LAYER\DONHANGCANXULY.cs" />
-    <Compile Include="GUI\dangkidangnhap\dangnhap.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\dangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\dangkidangnhap\dangnhap.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\dangkidangnhap\dangky.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\dangky.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\dangkidangnhap\dangky.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\dangky.Designer.cs">
       <DependentUpon>dangky.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\dangkidangnhap\loadinghethong.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\loadinghethong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\dangkidangnhap\loadinghethong.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\loadinghethong.Designer.cs">
       <DependentUpon>loadinghethong.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\dangkidangnhap\loadingnhanvien.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\loadingnhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\dangkidangnhap\loadingnhanvien.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\dangkidangnhap\loadingnhanvien.Designer.cs">
       <DependentUpon>loadingnhanvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\khachhang\chitietsanpham.cs">
+    <Compile Include="LOGIC_LAYER\GUI\khachhang\chitietsanpham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\khachhang\chitietsanpham.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\khachhang\chitietsanpham.Designer.cs">
       <DependentUpon>chitietsanpham.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\khachhang\giaodienchinh.cs">
+    <Compile Include="LOGIC_LAYER\GUI\khachhang\giaodienchinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\khachhang\giaodienchinh.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\khachhang\giaodienchinh.Designer.cs">
       <DependentUpon>giaodienchinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\khachhang\donhang.cs">
+    <Compile Include="LOGIC_LAYER\GUI\khachhang\donhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\khachhang\donhang.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\khachhang\donhang.Designer.cs">
       <DependentUpon>donhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\nhanvien\giaodienquanlichinh.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\giaodienquanlichinh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\giaodienquanlichinh.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\giaodienquanlichinh.Designer.cs">
       <DependentUpon>giaodienquanlichinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIDIA\quanlidia.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDIA\quanlidia.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIDIA\quanlidia.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDIA\quanlidia.Designer.cs">
       <DependentUpon>quanlidia.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.Designer.cs">
       <DependentUpon>formxemchitietdonhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\CrystalReport1.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\INHOADONFORM\CrystalReport1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.Designer.cs">
       <DependentUpon>INHOADON.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIHOADON\quanlihdon.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\quanlihdon.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIHOADON\quanlihdon.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\quanlihdon.Designer.cs">
       <DependentUpon>quanlihdon.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIDONHANG\quanlidonhang.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDONHANG\quanlidonhang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIDONHANG\quanlidonhang.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDONHANG\quanlidonhang.Designer.cs">
       <DependentUpon>quanlidonhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.Designer.cs">
+    <Compile Include="LOGIC_LAYER\GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.Designer.cs">
       <DependentUpon>quanlikhachhang.cs</DependentUpon>
     </Compile>
     <Compile Include="DB_LAYER\HOADON.cs" />
@@ -170,50 +170,50 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DB_LAYER\sysdiagram.cs" />
-    <EmbeddedResource Include="GUI\dangkidangnhap\dangnhap.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\dangkidangnhap\dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\dangkidangnhap\dangky.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\dangkidangnhap\dangky.resx">
       <DependentUpon>dangky.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\dangkidangnhap\loadinghethong.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\dangkidangnhap\loadinghethong.resx">
       <DependentUpon>loadinghethong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\dangkidangnhap\loadingnhanvien.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\dangkidangnhap\loadingnhanvien.resx">
       <DependentUpon>loadingnhanvien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\khachhang\chitietsanpham.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\khachhang\chitietsanpham.resx">
       <DependentUpon>chitietsanpham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\khachhang\giaodienchinh.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\khachhang\giaodienchinh.resx">
       <DependentUpon>giaodienchinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\khachhang\donhang.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\khachhang\donhang.resx">
       <DependentUpon>donhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\giaodienquanlichinh.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\giaodienquanlichinh.resx">
       <DependentUpon>giaodienquanlichinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\QUANLIDIA\quanlidia.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDIA\quanlidia.resx">
       <DependentUpon>quanlidia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDONHANG\formxemchitietdonhang.resx">
       <DependentUpon>formxemchitietdonhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\CrystalReport1.rpt">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\INHOADONFORM\CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\INHOADONFORM\INHOADON.resx">
       <DependentUpon>INHOADON.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\QUANLIHOADON\quanlihdon.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\QUANLIHOADON\quanlihdon.resx">
       <DependentUpon>quanlihdon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\QUANLIDONHANG\quanlidonhang.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\QUANLIDONHANG\quanlidonhang.resx">
       <DependentUpon>quanlidonhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.resx">
+    <EmbeddedResource Include="LOGIC_LAYER\GUI\nhanvien\QUANLIKHACHHANG\quanlikhachhang.resx">
       <DependentUpon>quanlikhachhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

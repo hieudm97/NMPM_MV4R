@@ -32,6 +32,12 @@
             this.txt_madonhang = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DONHANG_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGAYKHOITAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KHACHHANG_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NHANVIEN_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TONGTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TRANGTHAIDONHANG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_huy = new System.Windows.Forms.Button();
@@ -56,12 +62,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DONHANG_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NGAYKHOITAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KHACHHANG_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NHANVIEN_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TONGTIEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TRANGTHAIDONHANG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -76,6 +76,7 @@
             // 
             this.txt_ngaykhoitao.Location = new System.Drawing.Point(137, 79);
             this.txt_ngaykhoitao.Name = "txt_ngaykhoitao";
+            this.txt_ngaykhoitao.ReadOnly = true;
             this.txt_ngaykhoitao.Size = new System.Drawing.Size(248, 22);
             this.txt_ngaykhoitao.TabIndex = 2;
             // 
@@ -83,6 +84,7 @@
             // 
             this.txt_madonhang.Location = new System.Drawing.Point(138, 27);
             this.txt_madonhang.Name = "txt_madonhang";
+            this.txt_madonhang.ReadOnly = true;
             this.txt_madonhang.Size = new System.Drawing.Size(248, 22);
             this.txt_madonhang.TabIndex = 0;
             // 
@@ -116,6 +118,48 @@
             this.dataGridView1.Size = new System.Drawing.Size(854, 318);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // DONHANG_ID
+            // 
+            this.DONHANG_ID.DataPropertyName = "DONHANG_ID";
+            this.DONHANG_ID.HeaderText = "MÃ ĐƠN HÀNG";
+            this.DONHANG_ID.Name = "DONHANG_ID";
+            this.DONHANG_ID.ReadOnly = true;
+            // 
+            // NGAYKHOITAO
+            // 
+            this.NGAYKHOITAO.DataPropertyName = "NGAYKHOITAO";
+            this.NGAYKHOITAO.HeaderText = "NGÀY KHỞI TẠO ĐƠN HÀNG";
+            this.NGAYKHOITAO.Name = "NGAYKHOITAO";
+            this.NGAYKHOITAO.ReadOnly = true;
+            // 
+            // KHACHHANG_ID
+            // 
+            this.KHACHHANG_ID.DataPropertyName = "KHACHHANG_ID";
+            this.KHACHHANG_ID.HeaderText = "MÃ KHÁCH HÀNG";
+            this.KHACHHANG_ID.Name = "KHACHHANG_ID";
+            this.KHACHHANG_ID.ReadOnly = true;
+            // 
+            // NHANVIEN_ID
+            // 
+            this.NHANVIEN_ID.DataPropertyName = "NHANVIEN_ID";
+            this.NHANVIEN_ID.HeaderText = "MÃ NHÂN VIÊN";
+            this.NHANVIEN_ID.Name = "NHANVIEN_ID";
+            this.NHANVIEN_ID.ReadOnly = true;
+            // 
+            // TONGTIEN
+            // 
+            this.TONGTIEN.DataPropertyName = "TONGTIEN";
+            this.TONGTIEN.HeaderText = "TỔNG TIỀN";
+            this.TONGTIEN.Name = "TONGTIEN";
+            this.TONGTIEN.ReadOnly = true;
+            // 
+            // TRANGTHAIDONHANG
+            // 
+            this.TRANGTHAIDONHANG.DataPropertyName = "TRANGTHAIDONHANG";
+            this.TRANGTHAIDONHANG.HeaderText = "TRẠNG THÁI ĐƠN HÀNG";
+            this.TRANGTHAIDONHANG.Name = "TRANGTHAIDONHANG";
+            this.TRANGTHAIDONHANG.ReadOnly = true;
             // 
             // panel3
             // 
@@ -235,6 +279,7 @@
             // 
             this.txt_manhanvien.Location = new System.Drawing.Point(521, 28);
             this.txt_manhanvien.Name = "txt_manhanvien";
+            this.txt_manhanvien.ReadOnly = true;
             this.txt_manhanvien.Size = new System.Drawing.Size(319, 22);
             this.txt_manhanvien.TabIndex = 8;
             // 
@@ -251,6 +296,7 @@
             // 
             this.txt_tongtien.Location = new System.Drawing.Point(521, 78);
             this.txt_tongtien.Name = "txt_tongtien";
+            this.txt_tongtien.ReadOnly = true;
             this.txt_tongtien.Size = new System.Drawing.Size(319, 22);
             this.txt_tongtien.TabIndex = 6;
             // 
@@ -267,6 +313,7 @@
             // 
             this.txt_makhachhang.Location = new System.Drawing.Point(138, 134);
             this.txt_makhachhang.Name = "txt_makhachhang";
+            this.txt_makhachhang.ReadOnly = true;
             this.txt_makhachhang.Size = new System.Drawing.Size(248, 22);
             this.txt_makhachhang.TabIndex = 4;
             // 
@@ -304,13 +351,14 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "XÁC NHẬN",
             "CHƯA XÁC NHẬN"});
             this.comboBox2.Location = new System.Drawing.Point(0, 165);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(308, 24);
             this.comboBox2.TabIndex = 12;
             // 
             // label6
@@ -326,6 +374,7 @@
             // 
             this.txt_trangthaidonhang.Location = new System.Drawing.Point(521, 136);
             this.txt_trangthaidonhang.Name = "txt_trangthaidonhang";
+            this.txt_trangthaidonhang.ReadOnly = true;
             this.txt_trangthaidonhang.Size = new System.Drawing.Size(319, 22);
             this.txt_trangthaidonhang.TabIndex = 10;
             // 
@@ -357,48 +406,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(854, 590);
             this.panel1.TabIndex = 1;
-            // 
-            // DONHANG_ID
-            // 
-            this.DONHANG_ID.DataPropertyName = "DONHANG_ID";
-            this.DONHANG_ID.HeaderText = "MÃ ĐƠN HÀNG";
-            this.DONHANG_ID.Name = "DONHANG_ID";
-            this.DONHANG_ID.ReadOnly = true;
-            // 
-            // NGAYKHOITAO
-            // 
-            this.NGAYKHOITAO.DataPropertyName = "NGAYKHOITAO";
-            this.NGAYKHOITAO.HeaderText = "NGÀY KHỞI TẠO ĐƠN HÀNG";
-            this.NGAYKHOITAO.Name = "NGAYKHOITAO";
-            this.NGAYKHOITAO.ReadOnly = true;
-            // 
-            // KHACHHANG_ID
-            // 
-            this.KHACHHANG_ID.DataPropertyName = "KHACHHANG_ID";
-            this.KHACHHANG_ID.HeaderText = "MÃ KHÁCH HÀNG";
-            this.KHACHHANG_ID.Name = "KHACHHANG_ID";
-            this.KHACHHANG_ID.ReadOnly = true;
-            // 
-            // NHANVIEN_ID
-            // 
-            this.NHANVIEN_ID.DataPropertyName = "NHANVIEN_ID";
-            this.NHANVIEN_ID.HeaderText = "MÃ NHÂN VIÊN";
-            this.NHANVIEN_ID.Name = "NHANVIEN_ID";
-            this.NHANVIEN_ID.ReadOnly = true;
-            // 
-            // TONGTIEN
-            // 
-            this.TONGTIEN.DataPropertyName = "TONGTIEN";
-            this.TONGTIEN.HeaderText = "TỔNG TIỀN";
-            this.TONGTIEN.Name = "TONGTIEN";
-            this.TONGTIEN.ReadOnly = true;
-            // 
-            // TRANGTHAIDONHANG
-            // 
-            this.TRANGTHAIDONHANG.DataPropertyName = "TRANGTHAIDONHANG";
-            this.TRANGTHAIDONHANG.HeaderText = "TRẠNG THÁI ĐƠN HÀNG";
-            this.TRANGTHAIDONHANG.Name = "TRANGTHAIDONHANG";
-            this.TRANGTHAIDONHANG.ReadOnly = true;
             // 
             // quanlidonhang
             // 

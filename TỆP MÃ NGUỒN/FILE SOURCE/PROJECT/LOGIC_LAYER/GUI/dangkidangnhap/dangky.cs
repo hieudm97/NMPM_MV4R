@@ -42,6 +42,10 @@ namespace PROJECT
                 {
                     //thông báo
                     MessageBox.Show("CHÚC MỪNG BẠN ĐÃ ĐĂNG KÝ THÀNH CÔNG!!!");
+                    this.Hide();
+                    GUI.dangkidangnhap.dangnhap frm_dn = new GUI.dangkidangnhap.dangnhap();
+                    frm_dn.Show(); 
+                    
                 }
                 else
                 {

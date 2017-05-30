@@ -86,9 +86,7 @@ namespace PROJECT.GUI.nhanvien
 
         private void button3_Click(object sender, EventArgs e)
         {
-            /*thuc hien thao tac them dia vao db*/
-            //khoi tao thong tin
-         //   int ID = int.Parse(txt_iddia.Text);
+           
          try
             {
                 string tendia = txt_tendia.Text;
@@ -104,10 +102,14 @@ namespace PROJECT.GUI.nhanvien
                 {
                     MessageBox.Show("VUI LÒNG CHÈN HÌNH ẢNH ĐẠI DIỆN CHO ĐĨA");
                 }
-                //thuc hien thao tac them dia 
-                lg.themdia_GUI_nhanvien_quanlidia(tendia, ngaynhapdia, soluong, thongtinlienquan, gia,loaidia,hinhanhphim,doangioithieu);
-                //thong bao thanh cong 
-                MessageBox.Show("CHÚC MỪNG!!! BẠN VỪA THÊM ĐĨA THÀNH CÔNG");
+                else
+                {
+                    //thuc hien thao tac them dia 
+                    lg.themdia_GUI_nhanvien_quanlidia(tendia, ngaynhapdia, soluong, thongtinlienquan, gia, loaidia, hinhanhphim, doangioithieu);
+                    //thong bao thanh cong 
+                    MessageBox.Show("CHÚC MỪNG!!! BẠN VỪA THÊM ĐĨA THÀNH CÔNG");
+                }
+                
             }
             catch
             {
@@ -123,7 +125,6 @@ namespace PROJECT.GUI.nhanvien
             String bandau = text;
            bandau =  bandau.Replace("watch?v=", "v/");
             chuoidaxuly = bandau;
-            MessageBox.Show(chuoidaxuly);
             return chuoidaxuly; 
         }
 
@@ -176,12 +177,16 @@ namespace PROJECT.GUI.nhanvien
             //đổ dữ liệu
             txt_iddia.Text = dgv_row.Cells["ID"].Value.ToString();
             txt_tendia.Text = dgv_row.Cells["TEN"].Value.ToString();
-            txt_ngaynhapdia.Text = dgv_row.Cells["NGAYNHAPDIA"].Value.ToString();
+
+            DateTime ngaynhapdia = DateTime.Parse(dgv_row.Cells["NGAYNHAPDIA"].Value.ToString());
+            txt_ngaynhapdia.Text = ngaynhapdia.ToString("ddMMyyyy");
+
+
             txt_soluongdia.Text = dgv_row.Cells["SOLUONG"].Value.ToString();
             richtxt_thongtinlienquan.Text = dgv_row.Cells["THONGTINLIENQUAN"].Value.ToString();
             txt_giasanpham.Text = dgv_row.Cells["GIA"].Value.ToString();
             cbo_loaidia.Text = dgv_row.Cells["LOAIDIA"].Value.ToString();
-
+            txt_doangioithieu.Text = dgv_row.Cells["DOANGIOITHIEU"].Value.ToString();
             Image x = (Bitmap)((new ImageConverter()).ConvertFrom(dgv_row.Cells["HINHANHPHIM"].Value));
             pictureBox1.Image = x;
         }

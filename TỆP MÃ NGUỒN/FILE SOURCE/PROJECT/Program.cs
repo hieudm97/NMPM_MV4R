@@ -16,8 +16,8 @@ namespace PROJECT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-        //Application.Run(new GUI.khachhang.giaodienchinh("01882643357"));
-         Application.Run(new GUI.dangkidangnhap.dangnhap());
+      //  Application.Run(new GUI.nhanvien.giaodienquanlichinh());
+        Application.Run(new GUI.dangkidangnhap.dangnhap());
           
         }
     }

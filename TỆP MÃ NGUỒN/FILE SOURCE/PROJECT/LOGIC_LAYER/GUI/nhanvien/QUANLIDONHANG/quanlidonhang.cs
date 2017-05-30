@@ -145,8 +145,12 @@ namespace PROJECT.GUI.nhanvien
             DataGridViewRow dgv_row = dataGridView1.SelectedRows[0];
             //đổ dữ liệu
             txt_madonhang.Text = dgv_row.Cells[0].Value.ToString();
-            txt_ngaykhoitao.Text = dgv_row.Cells[1].Value.ToString();
+
+            DateTime date = DateTime.Parse(dgv_row.Cells[1].Value.ToString());
+            txt_ngaykhoitao.Text = date.ToString("ddMMyyyy");
+
             txt_makhachhang.Text = dgv_row.Cells[2].Value.ToString();
+
             txt_manhanvien.Text = dgv_row.Cells[3].Value.ToString();
             txt_tongtien.Text = dgv_row.Cells[4].Value.ToString();
             if(dgv_row.Cells[5].Value.ToString() == "True")

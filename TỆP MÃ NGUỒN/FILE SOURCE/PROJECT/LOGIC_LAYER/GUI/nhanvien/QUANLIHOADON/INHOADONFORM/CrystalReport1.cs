@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PROJECT.GUI.nhanvien.QUANLIHOADON.INHOADONFORM {
+namespace PROJECT.LOGIC_LAYER.GUI.nhanvien.QUANLIHOADON.INHOADONFORM {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace PROJECT.GUI.nhanvien.QUANLIHOADON.INHOADONFORM {
         
         public override string FullResourceName {
             get {
-                return "PROJECT.GUI.nhanvien.QUANLIHOADON.INHOADONFORM.CrystalReport1.rpt";
+                return "PROJECT.LOGIC_LAYER.GUI.nhanvien.QUANLIHOADON.INHOADONFORM.CrystalReport1.rpt";
             }
             set {
                 // Do nothing

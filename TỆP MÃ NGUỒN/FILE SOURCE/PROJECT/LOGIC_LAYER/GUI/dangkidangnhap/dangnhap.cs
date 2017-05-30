@@ -49,9 +49,10 @@ namespace PROJECT.GUI.dangkidangnhap
                     if (lg.kiemtrataikhoan_GUI_dkdn_dn(tendangnhap, matkhau) == true)
                     {
                         //hien thi form
+                        this.Hide();
                         khachhang.giaodienchinh frm_giaodienchinh = new khachhang.giaodienchinh(tendangnhap);
                         frm_giaodienchinh.Show();
-                        this.Hide();
+                        
                     }
                     else
                     {
@@ -85,9 +86,10 @@ namespace PROJECT.GUI.dangkidangnhap
                         if (lg.kiemtrataikhoannhanvien_GUI_dkdn_dn(tendangnhap, matkhau) == true)
                         {
                             //hien thi form
+                            this.Hide();
                             nhanvien.giaodienquanlichinh frm_giaodienchinh = new nhanvien.giaodienquanlichinh();
                             frm_giaodienchinh.Show();
-                            //  this.Hide();
+                            
                         }
                         else
                         {
